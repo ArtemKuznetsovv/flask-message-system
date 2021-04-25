@@ -1,5 +1,5 @@
 import datetime
-from message_system import db, app
+from message_system import db,app
 import jwt
 
 

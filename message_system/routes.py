@@ -1,6 +1,6 @@
-from flask import request, jsonify
+from flask import request, jsonify, Blueprint
 from message_system.utils import build_response_from_query
-from message_system import app, db
+from message_system import db, app
 from message_system.models import Message, User
 from message_system.validations import validate_json, validate_body_params, validate_token
 
