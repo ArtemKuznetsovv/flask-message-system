@@ -133,7 +133,3 @@ def delete_message(username):
         code = 200
 
     return jsonify(response), code
-
-
-if __name__ == '__main__':
-    app.run()
