@@ -55,7 +55,7 @@ def send_message(username):
     subject = request_data["subject"]
 
     if sender != username:
-        return jsonify({"error": "You can only send messages from the username which is bound to the token"}), 403
+        return jsonify({"error": "The sender field needs to be the username which is authenticated and making the request"}), 403
 
     message = Message(sender=sender, receiver=receiver, content=content, subject=subject)
     db.session.add(message)
