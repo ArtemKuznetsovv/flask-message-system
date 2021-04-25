@@ -17,10 +17,10 @@
 
      **Required:**
  
-   `username=[string]`
+   `username:[string]`
     
    
-        {"username" = "Michael Bloom"}
+        {"username": "Michael Bloom"}
 
 * **Success Response:**
   
