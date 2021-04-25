@@ -12,7 +12,7 @@ def create_app():
     app.config["SESSION_TYPE"] = "filesystem"
     app.config['SECRET_KEY'] = "secret"
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
     db.init_app(app)
 
     from message_system.models import User, Message
