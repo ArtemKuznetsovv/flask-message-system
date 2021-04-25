@@ -16,6 +16,6 @@ request. A Token can be acquired from the Login view above.
 * [Read message](Readme's/read.md) : `PUT /messages/{User}`
 * [Delete message](Readme's/delete.md) : `DELETE /messages/{User}`
 
-## Postman collection file
+## Postman collection
 
 * [Postman Collection](https://www.getpostman.com/collections/80d7a1ba04bd431d397c)
