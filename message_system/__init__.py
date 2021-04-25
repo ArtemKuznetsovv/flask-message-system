@@ -18,8 +18,9 @@ def create_app():
     from message_system.models import User, Message
     db.create_all()
     db.session.commit()
+    return app, db
 
-    from message_system import routes
 
-
+app, db = create_app()
+from message_system import routes
 
