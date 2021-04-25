@@ -18,4 +18,4 @@ request. A Token can be acquired from the Login view above.
 
 ## Postman collection
 
-* [Postman Collection](https://www.getpostman.com/collections/80d7a1ba04bd431d397c)
+* [Postman Collection](https://documenter.getpostman.com/view/11504579/TzJybFRT)
