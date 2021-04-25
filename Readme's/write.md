@@ -14,14 +14,17 @@ Create a Message from the authenticated user
 Sender name, receiver name,
 message content, message subject
 
+**In the headers provide**:"Authorization" header
+
 **In the url provide**: an authenticated username
+
 
 ```json
 {
-    "sender": "{string}"
+    "sender": "{string}",
     "receiver": "{string}",
-    "content": "{string}"
-    "subject": "{string}",
+    "content": "{string}",
+    "subject": "{string}"
 }
 ```
 
@@ -37,7 +40,7 @@ message content, message subject
 ```
 
 **Example** 
-[messages/Artem](https://flask-message-system.herokuapp.com/messages/ArtemTest)
+https://flask-message-system.herokuapp.com/messages/ArtemTest
 
 ## Success Response
 

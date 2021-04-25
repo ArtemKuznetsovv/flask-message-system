@@ -10,11 +10,11 @@ Delete the given message from the database
 
 ###Data constraints
 
-**In the url provide**: an authenticated username
+**In the url provide**: an authenticated username and query parameter for message ID
 
 
 **Example** 
-[messages/Artem](https://flask-message-system.herokuapp.com/messages/ArtemTest?id=1)
+https://flask-message-system.herokuapp.com/messages/ArtemTest?id=1
 
 ## Success Response
 

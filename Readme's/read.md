@@ -10,15 +10,13 @@ Mark a message that was meant for the authenticated user as read
 
 ###Data constraints
 
-**In the url provide**: an authenticated username
+**In the url provide**: an authenticated username and query parameter for message ID
 
-**Optional (In the URL):**
- 
-   `read=false` (provide or false or nothing)
+
 
 
 **Example** 
-[messages/Artem](https://flask-message-system.herokuapp.com/messages/ArtemTest?id=1)
+https://flask-message-system.herokuapp.com/messages/ArtemTest?id=1
 
 ## Success Response
 
@@ -75,3 +73,4 @@ Mark a message that was meant for the authenticated user as read
     "error": "You are not allowed to read this message as you are not the receiver"
 }
 ```
+
