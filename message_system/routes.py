@@ -62,7 +62,7 @@ def send_message(username):
     db.session.commit()
 
     response = {"message": "Your message has been submitted successfully"}
-    return jsonify(response), 200
+    return jsonify(response), 201
 
 
 @app.route("/messages/<string:username>", methods=['GET'])
