@@ -11,8 +11,7 @@ Create a Message from the authenticated user
 **Data constraints**
 
 **In the body provide**:
-Sender name, receiver name,
-message content, message subject
+receiver name, message content, message subject
 
 **In the headers provide**:"Authorization" header
 
@@ -21,7 +20,6 @@ message content, message subject
 
 ```json
 {
-    "sender": "{string}",
     "receiver": "{string}",
     "content": "{string}",
     "subject": "{string}"
@@ -32,7 +30,6 @@ message content, message subject
 
 ```json
 {
-    "sender": "Michael Jordan",
     "receiver": "Quentin Tarantino",
     "content": "Hello",
     "subject": "Greetings"
@@ -81,16 +78,3 @@ https://flask-message-system.herokuapp.com/messages/ArtemTest
 }
 ```
 
-### Or
-
-**Condition** : Sender field is different from the user that is authenticated.
-
-**Code** : `403 Forbidden`
-
-**Content example**
-
-```json
-{
-    "error": "The sender field needs to be the username which is authenticated and making the request"
-}
-```
