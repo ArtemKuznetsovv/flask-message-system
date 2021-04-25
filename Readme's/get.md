@@ -8,7 +8,7 @@ Get messages that was sent to the authenticated user
 
 **Auth required** : YES
 
-###Data constraints
+### Data constraints
 
 **In the url provide**: an authenticated username
 
@@ -64,7 +64,8 @@ Get messages that was sent to the authenticated user
 {"error": "No messages for this specific query"}
 ```
 
-* ###Notes
+* ### Notes
 
-    **The endpoints get all messages for a specific user and get all unread messages for a specific user 
+    **The endpoints get all messages for a specific user, and get all unread messages for a specific user 
 are combined in this one endpoint**
+    **Also note that you can get only messages that are meant for you**
