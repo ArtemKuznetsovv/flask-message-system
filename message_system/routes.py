@@ -1,11 +1,11 @@
-from flask import request, jsonify, Blueprint
+from flask import request, jsonify
 from message_system.utils import build_response_from_query
 from message_system import db, app
 from message_system.models import Message, User
 from message_system.validations import validate_json, validate_body_params, validate_token
 
 
-@app.route("/authenticate", methods=['POST'])
+@app.route("/authentication", methods=['POST'])
 @validate_json
 @validate_body_params("username")
 def login():
