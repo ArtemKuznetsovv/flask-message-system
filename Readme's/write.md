@@ -80,3 +80,17 @@ https://flask-message-system.herokuapp.com/messages/ArtemTest
     "status": "error"
 }
 ```
+
+### Or
+
+**Condition** : Sender field is different from the user that is authenticated.
+
+**Code** : `403 Forbidden`
+
+**Content example**
+
+```json
+{
+    "error": "The sender field needs to be the username which is authenticated and making the request"
+}
+```
