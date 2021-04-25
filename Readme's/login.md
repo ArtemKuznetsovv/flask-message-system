@@ -38,7 +38,12 @@
 * **Error Response:**
 
   * **Code:** 409 Conflict <br />
-    **Content:** `{ "error" : "The username provided already exists" }`
+    **Content:**
+ ```json
+{
+    "error" : "The username provided already exists"
+}
+```
     
    * **Code:** 400 Bad Request <br />
      **Content:** 
