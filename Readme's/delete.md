@@ -26,7 +26,7 @@ https://flask-message-system.herokuapp.com/messages/ArtemTest?id=1
 
 ```json
 {
-    "info": "Message has been deleted successfully"
+    "message": "Message has been deleted successfully"
 }
 ```
 
