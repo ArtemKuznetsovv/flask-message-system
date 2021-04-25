@@ -27,7 +27,7 @@
 
   * **Code:** 200 <br />
     **Content:**
-   ```json
+```json
 {
     "message": "You have been successfully authenticated",
     "token": "ResponseToken"
