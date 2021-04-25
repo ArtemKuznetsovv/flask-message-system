@@ -129,7 +129,7 @@ def delete_message(username):
     else:
         db.session.delete(message)
         db.session.commit()
-        response["info"] = "Message has been deleted successfully"
+        response["message"] = "The Message has been deleted successfully"
         code = 200
 
     return jsonify(response), code
