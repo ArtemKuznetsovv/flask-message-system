@@ -42,22 +42,18 @@ def login():
 @app.route("/messages/<string:username>", methods=['POST'])
 @validate_json
 @validate_token
-@validate_body_params("sender", "receiver", "content", "subject")
+@validate_body_params("receiver", "content", "subject")
 def send_message(username):
     """
     Create a message and insert to db based on body parameters
     :return: Json response
     """
     request_data = request.get_json()
-    sender = request_data["sender"]
     receiver = request_data["receiver"]
     content = request_data["content"]
     subject = request_data["subject"]
 
-    if sender != username:
-        return jsonify({"error": "The sender field needs to be the username which is authenticated and making the request"}), 403
-
-    message = Message(sender=sender, receiver=receiver, content=content, subject=subject)
+    message = Message(sender=username, receiver=receiver, content=content, subject=subject)
     db.session.add(message)
     db.session.commit()
 
